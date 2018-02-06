@@ -1,0 +1,35 @@
+#page-content
+	span(1)
+	padding-top ($padding-desktop*2+$logo-height-desktop*2)
+	min-height 100vh
+
+#sunglasses
+	position fixed
+	top 6.8rem
+	left $padding
+	z-index 350
+	+below($md)
+		display none
+
+body, #container, footer
+	transition background-color 300ms ease
+
+#site-title
+	transition filter 300ms ease
+
+body[page-type=default]
+	background $secondary
+	color $primary
+	#site-title
+		filter invert(1)
+	#container, footer
+		background $secondary
+	#page-text
+		span(1/6, $offset: 2.5/6)
+		padding-bottom $padding
+		+below($md)
+			stack()
+			padding-left $padding
+			padding-right $padding
+		h1
+			margin-bottom 1em

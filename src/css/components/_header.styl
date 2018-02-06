@@ -1,0 +1,16 @@
+header
+	position fixed
+	top $padding
+	left 0
+	width 100%
+	display flex
+	justify-content center
+	z-index 300
+	h1
+		display none
+	#site-title
+		height $logo-height-desktop
+		+below($md)
+			height $logo-height-mobile
+		img
+			display block

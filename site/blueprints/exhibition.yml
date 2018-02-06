@@ -1,0 +1,78 @@
+title: Exhibition
+files: true
+pages: false
+files:
+  fields:
+    caption:
+      label: Caption
+      type: textarea
+      buttons:
+        - link
+        - email
+    videolink:
+      label: Video ID
+      type: text
+      icon: code
+      help: Youtube ID or Vimeo ID
+    vendor:
+      label: Vendor
+      type: radio
+      default: vimeo
+      options:
+        vimeo: Vimeo 
+        youtube: Youtube
+    videostream:
+      label: Video external stream link (.m3u8)
+      type: url
+    videoexternal:
+      label: Video external file link
+      type: url
+    videofile:
+      label: Video File
+      type: select
+      options: videos
+fields:
+  prevnext: prevnext
+  title:
+    label: Title
+    type:  text
+    width: 1/2
+  artist:
+    label: Artist
+    type: text
+    width: 1/2
+  subtitle:
+    label: Subtitle
+    type: text
+    width: 1/2
+  date:
+    label: Start Date
+    type:  date
+    format: DD/MM/YYYY
+    required: true
+    width: 1/4
+  endDate:
+    label: End Date
+    type:  date
+    format: DD/MM/YYYY
+    width: 1/4
+  flyer:
+    label: Flyer image
+    type: image
+    width: 1/3
+  featured:
+    label: Featured image
+    type: image
+    help: For social medias
+    width: 1/3
+  pressRelease:
+    label: Press Release
+    type: select
+    options: files
+    width: 1/3
+  text:
+    label: Description
+    type: textarea
+  medias: 
+    label: Images
+    type: images

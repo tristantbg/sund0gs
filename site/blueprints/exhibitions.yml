@@ -1,0 +1,19 @@
+title: Exhibitions
+files: false
+pages:
+  template: exhibition
+  sort: date desc
+fields:
+  title:
+    label: Title
+    type:  text
+  pageindex:
+    label: Exhibitions Index
+    type: index
+    options: children
+    columns:
+      title: Title
+      artist: Artist
+      date: Start Date
+      endDate: End Date
+      slug: Slug

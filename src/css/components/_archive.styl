@@ -1,0 +1,28 @@
+.exhibition-title
+	span(1)
+	+above($md + 1)
+		display flex
+	+below($md)
+		padding 0 $padding
+	.mobile-only
+		+above($md + 1)
+			display none
+	& > div
+		span(1/6)
+		padding 1em 0
+		+below($md)
+			stack()
+			text-align center
+		&:not(.mobile)
+			+below($md)
+				display none
+	.item-date
+		+above($md + 1)
+			padding-left "calc(%s * 5)" % ($padding)
+	.item-subtitle
+		+above($md + 1)
+			span(2/6)
+	.item-press
+		text-align right
+		+above($md + 1)
+			padding-right "calc(%s * 5)" % ($padding)
