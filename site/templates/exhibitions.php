@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
-<div id="sunglasses">
+<div id="button-right">
 	<a href="<?= page('sunglasses')->url() ?>" data-target>
-		<span><?= page('sunglasses')->title()->upper() ?><br>Series I</span>
+		<span><?= page('sunglasses')->title()->html() ?> ></span>
 	</a>
 </div>
 

@@ -3,9 +3,17 @@
 	padding-top ($padding-desktop*2+$logo-height-desktop*2)
 	min-height 100vh
 
-#sunglasses
+#button-right
 	position fixed
-	top 6.8rem
+	top $padding
+	right $padding
+	z-index 350
+	+below($md)
+		display none
+
+#button-left
+	position fixed
+	top $padding
 	left $padding
 	z-index 350
 	+below($md)

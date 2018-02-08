@@ -86,7 +86,7 @@
 
 	<header>
 		<div id="site-title">
-			<a href="<?= $site->url() ?>" data-target>
+			<a href="<?= e($page->isHomepage(), page('sunglasses')->url(), $site->url()) ?>" data-target>
 				<h1><?= $site->title()->html() ?></h1>
 				<img src="<?= url('assets/images/sundogs-logo.svg') ?>" alt="<?= $site->title()->html() ?>" height="100%">
 			</a>
